@@ -1,0 +1,22 @@
+---
+- hosts: test
+  remote_user: papa
+  become: yes
+  become_method: sudo
+  tasks:
+    - name: permit ssh access
+      ansible.posix.firewalld:
+        rich_rule: rule family="ipv4" source address="108.48.84.87/32" port port="22" protocol="tcp" accept
+        zone: public
+        permanent: yes
+        immediate: yes
+        state: enabled
+
+
+    - name: permit cockpit access
+      ansible.posix.firewalld:
+        rich_rule: rule family="ipv4" source address="108.48.84.87/32" port port="9090" protocol="tcp" accept
+        zone: public
+        permanent: yes
+        immediate: yes
+        state: enabled

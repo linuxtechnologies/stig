@@ -1,0 +1,9 @@
+---
+- hosts: test
+  remote_user: papa
+  become: yes
+  become_method: sudo
+  roles:
+    - RedHatOfficial.rhel7_stig
+    #      - RedHatOfficiel.rhel7_stig
+    # - { role: RedHatOfficiel.rhel7_stig }

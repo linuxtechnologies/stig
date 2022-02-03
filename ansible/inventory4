@@ -1,0 +1,11 @@
+[test]
+idm.linuxtechnologies.us  ansible_host=149.56.233.19
+class8.linuxtechnologies.us
+class7.linuxtechnologies.us
+vpn.linuxtechnologies.us
+bastion1.linuxtechnologies.us
+ldap.linuxtechnologies.us
+openshift4.linuxtechnologies.us
+support.linuxtechnologies.us
+tower.linuxtechnologies.us
+web.linuxtechnologies.us
