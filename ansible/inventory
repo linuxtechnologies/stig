@@ -1,14 +1,6 @@
-[dev]
-host1.linuxtechnologies.us
 [test]
-host2.linuxtechnologies.us
-[prod]
-host3.linuxtechnologies.us
-host4.linuxtechnologies.us
-[balancers]
-host5.linuxtechnologies.us
-[webservers:children]
-prod
+host2.example.com
+
 
 
 
